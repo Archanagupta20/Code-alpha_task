@@ -1,0 +1,6 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f6fb;color:#111;padding:20px}
+.container{max-width:700px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+input,textarea{width:100%;padding:8px;margin:8px 0;border:1px solid #ddd;border-radius:4px}
+button{padding:8px 12px;border:0;background:#2b6df6;color:#fff;border-radius:6px;cursor:pointer}
+.post{border-bottom:1px solid #eee;padding:12px 0}
+.userbar{display:flex;justify-content:space-between;align-items:center}

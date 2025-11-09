@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mini Social App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mini Social App</h1>
+
+    <div id="auth">
+      <h2>Register / Login</h2>
+      <input id="name" placeholder="Name (register only)" />
+      <input id="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Password" />
+      <div class="buttons">
+        <button id="registerBtn">Register</button>
+        <button id="loginBtn">Login</button>
+      </div>
+      <div id="authMsg"></div>
+    </div>
+
+    <div id="app" style="display:none;">
+      <div class="userbar">
+        <span id="welcome"></span>
+        <button id="logoutBtn">Logout</button>
+      </div>
+
+      <section class="create-post">
+        <textarea id="postText" placeholder="What's on your mind?"></textarea>
+        <button id="postBtn">Post</button>
+      </section>
+
+      <section id="posts"></section>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
