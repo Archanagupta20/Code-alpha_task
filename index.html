@@ -1,42 +1,483 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Mini Social App</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommarce website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Mini Social App</h1>
+    <!--Navbar Here -->
+    <header>
+        <nav class="navbar flex container">
+            <a href="#" class="logo">
+                Buzz<span>Buy.</span>
+            </a>
 
-    <div id="auth">
-      <h2>Register / Login</h2>
-      <input id="name" placeholder="Name (register only)" />
-      <input id="email" placeholder="Email" />
-      <input id="password" type="password" placeholder="Password" />
-      <div class="buttons">
-        <button id="registerBtn">Register</button>
-        <button id="loginBtn">Login</button>
-      </div>
-      <div id="authMsg"></div>
-    </div>
+            <ul class="navlist flex container">
+                <li>
+                    <a href="#" class="link link-active">home</a>
+                </li>
+                <li>
+                    <a href="#" class="link">shop</a>
+                </li>
+                <li>
+                    <a href="#" class="link">page</a>
+                </li>
+                <li>
+                    <a href="#" class="link">blog</a>
+                </li>
+                <li>
+                    <a href="#" class="link">contact</a>
+                </li>
+                <li class="nav-icons flex">
+                    <a href="#" class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#" class="icon icon-active">
+                        <i class="fa-solid fa-shopping-bag"></i>
+                    </a>
 
-    <div id="app" style="display:none;">
-      <div class="userbar">
-        <span id="welcome"></span>
-        <button id="logoutBtn">Logout</button>
-      </div>
+                </li>
+            </ul>
+            <a href="#" class="hanburger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
 
-      <section class="create-post">
-        <textarea id="postText" placeholder="What's on your mind?"></textarea>
-        <button id="postBtn">Post</button>
-      </section>
 
-      <section id="posts"></section>
-    </div>
-  </div>
+    <!-- section here-->
+    <main>
+        <section class="hero  ">
+            <div class="hero.contant flex container ">
+                <div>
+                    <h3>Winter Fashion</h3>
+                    <h1>New Collection</h1>
+                    <h4>Big sale of this week up to <span>30%</span></h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="category-container container">
+                <div class="category">
+                    <img src="image/men coat.jpg">
+                    <button>for men's</button>
+                </div>
+                <div class="category">
+                    <img src="image/for kid.webp">
+                    <button>for kid's</button>
+                </div>
+                <div class="category">
+                    <img src="for accessories.jpg">
+                    <button>for accessories</button>
+                </div>
+                <div class="category">
+                    <img src="image/woman coat.jpg">
+                    <button>for women's</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2>New Product</h2>
+                <div class="line"></div>
+                <div class="card-container flex">
+                    <div class="card">
+                        <img src="image/card-image1.jpg">
+                        <div class="card-container">
+                            <p class="title">
+                                ASIAN Casual Sneaker Shoes Edition
+                            </p>
+                            <div>
+                                <del>$150.00</del>
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card sale">
+                        <img src="image/card-image2.jpg">
+                        <div class="card-container">
+                            <p class="title">
+                                Leather Black Handbag Out Edition
+                            </p>
+                            <div class="price">
+                                <del>$300.00</del>
+                                <span class="amount">$200.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card New">
+                        <img src="image/card-image3.jpg">
+                        <div class="card-container">
+                            <p class="title">
+                                Ewools Round Neck women Sweater
+                            </p>
+                            <div>
+                                <del>$1500.00</del>
+                                <span class="amount">$1199.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card New">
+                        <img src="image/card-image4.jpg">
+                        <div class="card-container">
+                            <p class="title">
+                                Savana Gray Belted Leather Jacket
+                            </p>
+                            <div>
+                                <del>$3900.00</del>
+                                <span class="amount">$1999.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <script src="/app.js"></script>
+        </section>
+        <section class="section">
+            <div class="sale-container">
+                <h3>New Trend 2025</h3>
+                <h1>Women's Collection </h1>
+                <div class="line"></div>
+                <h4>Big sale of this week</h4>
+                <button>shop now</button>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="container">
+                <h2>Best Sale</h2>
+                <div class="line"></div>
+                <div class="risk-container flex">
+                    <div class="risk">
+                        <img src="image/card-image5.jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                Laptop backpack trendy Casual bags
+                            </p>
+                            <div>
+                                <del>$789.00</del>
+                                <span class="amount">$490.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="risk">
+                        <img src="image/card-image6.jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                Hemovia mini windproof umbrella
+                            </p>
+                            <div class="price">
+                                <del>$300.00</del>
+                                <span class="amount">$239.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="risk">
+                        <img src="image/card-image7.jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                brown texas leatherite casual belt
+                            </p>
+                            <div>
+                                <del>$463.00</del>
+                                <span class="amount">$259.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="risk New">
+                        <img src="image/card-image8.jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                Savana Gray Belted Leather Jacket
+                            </p>
+                            <div>
+                                <del>$1009.00</del>
+                                <span class="amount">$899.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="risk-container flex">
+                    <div class="risk">
+                        <img src="image/card-image9 (1).jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                Casual trendy comfortable stylish boots
+                            </p>
+                            <div>
+                                <del>$1509.00</del>
+                                <span class="amount">$1199.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="risk sale">
+                        <img src="image/card-image10.jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                Exotic woman feminina solid handbag
+                            </p>
+                            <div class="price">
+                                <del>$2999.00</del>
+                                <span class="amount">$2587.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="risk New">
+                        <img src="image/card-image11.jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                Ewools gray black office casual bags
+                            </p>
+                            <div>
+                                <del>$1500.00</del>
+                                <span class="amount">$1199.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="risk New">
+                        <img src="image/card-image12.jpg">
+                        <div class="risk-container">
+                            <p class="title">
+                                plagg black Belted Leather Jacket
+                            </p>
+                            <div>
+                                <del>$3900.00</del>
+                                <span class="amount">$2999.00</span>
+                            </div>
+                            <button class="add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="secondary-bg">
+                <div class="container flex">
+                    <div class="box">
+                        <i class="fa-solid fa-truck"></i>
+                        <h5>
+                            <a href="#">Free Shipping</a>
+                        </h5>
+                        <p class="des"> free shipping on order over$99</p>
+
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-money-bill-1"></i>
+                        <h5>
+                            <a href="#">Cash on dilivery</a>
+                        </h5>
+                        <p class="des">The internet trend to repeat</p>
+
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-gift"></i>
+                        <h5>
+                            <a href="#">Gift for all</a>
+                        </h5>
+                        <p class="des"> Recive gift when subscribe</p>
+
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-clock"></i>
+                        <h5>
+                            <a href="#">Opening all week</a>
+                        </h5>
+                        <p class="des"> 6.00pm - 17.00pm</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2>New Latest</h2>
+                <div class="line"></div>
+                <div class="blog-container flex">
+                    <div class="blog-box ">
+                        <img src="image/news-image1.jpg">
+                        <div class="blog-contant">
+                            <h3 class="heading">New Trend 2025 </h3>
+                            <p>Lorem ipsum dolor sit amet consecteur adipisicing elit. pariatur sint unde voluplates
+                                amet delectus voluptatibus nisi dolorum recusandae. </p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="blog-box">
+                        <img src="image/news-image2.jpg">
+                        <div class="blog-contant">
+                            <h3 class="heading">New Trend 2025 </h3>
+                            <p>Lorem ipsum dolor sit amet consecteur adipisicing elit. pariatur sint unde voluplates
+                                amet delectus voluptatibus nisi dolorum recusandae. </p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="blog-box">
+                        <img src="image/news-image3.jpg">
+                        <div class="blog-contant">
+                            <h3 class="heading">New Trend 2025 </h3>
+                            <p>Lorem ipsum dolor sit amet consecteur adipisicing elit. pariatur sint unde voluplates
+                                amet delectus voluptatibus nisi dolorum recusandae. </p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section>
+            <div class="secondary-bg">
+                <form class="container flex">
+                    <h3>Sign up for send newsletter</h3>
+
+                    <div class="input-container flex">
+                        <input type="email" name="email" id="email" placeholder="your email" autocomplete="off">
+                        <button>Subscribe</button>
+                    </div>
+                    <div class="social icons flex">
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands-fa-google"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands-fa-behance"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands-fa-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- footer here-->
+        <footer class="section">
+            <div class="container flex">
+                <div class="container flex">
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">about us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">online store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container flex">
+                    <ul class="footer-list ">
+                        <li>
+                            <a href="#" class="footer-link">login/registor</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">your cort</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">wishlist items</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">your checkout</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container flex">
+                
+                    <ul class="footer-list ">
+                        <li>
+                            <a href="#" class="footer-link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">terms of service</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">returns</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container flex">
+                    <ul class="footer-list">
+                        <li class="footer-logo">
+                            <a href="#" class="logo">
+                                Buzz<span>Buy.</span>
+                            </a>
+                        </li>
+                        <li>
+                            <p class="detail">ABC City, XYZ Road</p>
+                        </li>
+                        <li>
+                            <p class="detail">+91 123 456 78</p>
+                        </li>
+                        <li>
+                            <p class="detail">buzzbuy@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    Copyright &copy;2025
+                    <a href="#" class="footer-link">BuzzyBuy.</a>
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>
